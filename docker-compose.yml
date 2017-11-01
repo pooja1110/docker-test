@@ -1,0 +1,10 @@
+version: '2'
+services:
+  api:
+    build: .
+    volumes:
+      - ./www:/var/www
+    ports:
+      - 80:80
+      - 443:443
+    tty: true
